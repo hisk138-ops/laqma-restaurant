@@ -1,0 +1,97 @@
+/* إضافات السلة بالأسود والذهبي */
+.cart-shortcut {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 50;
+  padding: 12px 20px;
+  background: #e2bf83;
+  color: #171717;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: bold;
+  box-shadow: 0 6px 20px #0008;
+}
+.add-cart-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #e2bf83;
+  color: #171717;
+  border: 0;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+.add-cart-button:hover, .cart-shortcut:hover { background: #f5d9a5; }
+.cart-page {
+  max-width: 760px;
+  margin: 45px auto;
+  padding: 25px;
+  background: #262626;
+  border: 1px solid #b8955b;
+  border-radius: 18px;
+  color: #f5f0e8;
+}
+.cart-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 18px 0;
+  border-bottom: 1px solid #5d503c;
+}
+.qty-controls { display: flex; align-items: center; gap: 12px; }
+.qty-controls button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e2bf83;
+  border-radius: 8px;
+  background: transparent;
+  color: #e2bf83;
+  cursor: pointer;
+  font-size: 22px;
+}
+.cart-total-line { display: flex; justify-content: space-between; padding: 25px 0; font-size: 24px; color: #e2bf83; }
+.checkout-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #25d366;
+  color: #102717;
+  font: inherit;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+.checkout-button:disabled { opacity: .45; cursor: not-allowed; }
+#cart-status { min-height: 1.5em; color: #e2bf83; }
+@media(max-width: 600px) {
+  .cart-page { margin: 20px 12px; padding: 16px; }
+  .cart-row { align-items: flex-start; flex-direction: column; }
+  .cart-shortcut { bottom: 12px; left: 12px; }
+}
+/* تخصيص الوجبات وبيانات الزبون */
+.cart-page h2 { color: #e2bf83; font-size: 23px; margin: 18px 0; }
+.cart-item-details { flex: 1; min-width: 0; }
+.cart-item-name { color: #f5e5c8; font-size: 18px; }
+.cart-item-price { color: #cfc5b5; font-size: 14px; margin: 6px 0; }
+.cart-side { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+.cart-line-total { color: #e2bf83; }
+.extras-wrap { display: flex; flex-wrap: wrap; gap: 8px 15px; margin-top: 12px; }
+.extras-title { flex-basis: 100%; color: #e2bf83; font-size: 14px; }
+.extra-option { color: #eee; font-size: 14px; cursor: pointer; }
+.extra-option input { accent-color: #d9b77a; }
+.checkout-fields { display: grid; gap: 10px; margin-bottom: 25px; }
+.checkout-fields label { color: #e2bf83; font-weight: bold; }
+.checkout-fields input, .checkout-fields select, .checkout-fields textarea {
+  width: 100%; box-sizing: border-box; padding: 12px; border-radius: 9px;
+  border: 1px solid #6c5b42; background: #171717; color: #fff;
+  font: inherit; font-size: 16px;
+}
+#address-wrap { display: grid; gap: 10px; }
+#address-wrap[hidden] { display: none; }
+.cart-note { font-size: 14px; color: #d4cbbd; line-height: 1.8; }
+@media(max-width:600px) { .cart-side { align-items: flex-start; } }
