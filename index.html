@@ -1,25 +1,29 @@
 
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-    <link rel="stylesheet" href="cart.css">
-<script src="cart.js" defer></script>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>لقمة | LAQMA Restaurant</title>
+
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
+  <script src="cart.js" defer></script>
 </head>
-<a href="cart.html" class="cart-shortcut">
-  🛒 السلة (<span id="cart-count">0</span>)
-</a>
-<p id="cart-status" role="status"></p>
+
 <body>
 
   <nav class="navbar">
-    <a href="index.html" class="logo">LAQMA <span>لقمة</span></a>
+    <a href="index.html" class="logo">
+      LAQMA <span>لقمة</span>
+    </a>
+
     <div class="nav-links">
       <a href="food.html">المأكولات</a>
       <a href="drinks.html">المشروبات</a>
+      <a href="offers.html">العروض</a>
+      <a href="cart.html">السلة 🛒</a>
     </div>
   </nav>
 
@@ -28,6 +32,7 @@
       <span class="small-title">WELCOME TO LAQMA</span>
       <h1>لقمة غير عن كل لقمة</h1>
       <p>نكهات استثنائية، وأطباق محضّرة بكل حب</p>
+
       <a href="#categories" class="menu-button">
         اكتشف قائمتنا ↓
       </a>
@@ -35,16 +40,19 @@
   </header>
 
   <section id="categories" class="categories-section">
+
     <span class="small-title">EXPLORE OUR MENU</span>
     <h2>اكتشف قائمتنا</h2>
     <p>اختار القسم اللي بناسب ذوقك</p>
 
     <div class="category-grid">
 
+      <!-- بطاقة المأكولات -->
       <a href="food.html" class="category-card">
         <img
           src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900"
-          alt="المأكولات">
+          alt="برغر من قائمة المأكولات">
+
         <div class="category-content">
           <h3>🍔 المأكولات</h3>
           <p>أطباق شهية ونكهات لا تُنسى</p>
@@ -52,15 +60,29 @@
         </div>
       </a>
 
+      <!-- بطاقة المشروبات -->
       <a href="drinks.html" class="category-card">
         <img
           src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=900"
-          alt="المشروبات">
+          alt="عصير من قائمة المشروبات">
+
         <div class="category-content">
           <h3>🥤 المشروبات</h3>
-          <a href="offers.html">🔥 العروض والكومبو</a>
           <p>مشروبات منعشة لكل الأذواق</p>
           <span>اكتشف المشروبات ←</span>
+        </div>
+      </a>
+
+      <!-- بطاقة العروض -->
+      <a href="offers.html" class="category-card">
+        <img
+          src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=900"
+          alt="وجبة برغر من العروض">
+
+        <div class="category-content">
+          <h3>🔥 العروض والكومبو</h3>
+          <p>وجبات مميزة بأسعار مناسبة</p>
+          <span>اكتشف العروض ←</span>
         </div>
       </a>
 
@@ -70,15 +92,14 @@
   <section class="home-about">
     <span class="small-title">ABOUT LAQMA</span>
     <h2>الطعم اللي بتحبه</h2>
+
     <p>
       في لقمة، بنقدّم أطباق لذيذة ومشروبات منعشة
       لتستمتع بتجربة طعام مميزة.
     </p>
-    <a href="https://wa.me/970599000000"
-       class="whatsapp-button"
-       target="_blank"
-       rel="noopener noreferrer">
-      اطلب عبر واتساب
+
+    <a href="cart.html" class="menu-button">
+      🛒 ابدأ طلبك
     </a>
   </section>
 
@@ -87,6 +108,12 @@
     <p>الخليل، فلسطين</p>
     <p>© 2026 لقمة — جميع الحقوق محفوظة</p>
   </footer>
+
+  <a href="cart.html" class="cart-shortcut">
+    🛒 السلة (<span id="cart-count">0</span>)
+  </a>
+
+  <p id="cart-status" role="status"></p>
 
 </body>
 </html>

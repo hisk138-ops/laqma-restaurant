@@ -455,4 +455,77 @@ p {
   background: #1da851;
   transform: translateY(-3px);
 }
+/* تحسين البطاقات الثلاث */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 45px auto 0;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: #252525;
+  border: 1px solid #b8955b;
+  border-radius: 18px;
+  text-decoration: none;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 35px rgba(226, 191, 131, 0.18);
+}
+
+.category-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.category-content {
+  flex: 1;
+  padding: 24px 18px;
+  text-align: center;
+}
+
+.category-content h3 {
+  color: #e2bf83;
+  font-size: 23px;
+}
+
+.category-content p {
+  color: #cccccc;
+  line-height: 1.8;
+}
+
+.category-content span {
+  color: #e2bf83;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .category-card img {
+    height: 230px;
+  }
+}
+
 
