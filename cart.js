@@ -6,11 +6,11 @@ const LAQMA_ITEMS = {
   orange: { name: 'عصير برتقال', price: 12 },
   strawberry: { name: 'عصير فراولة', price: 14 },
   soda: { name: 'مشروب غازي', price: 5 },
-  coffee: { name: 'قهوة تركية', price: 8 }
+  coffee: { name: 'قهوة تركية', price: 8 },
 };
 
 // غيّر الرقم إلى رقم المطعم الحقيقي قبل النشر (بدون +).
-const RESTAURANT_WHATSAPP = '0592405995';
+const RESTAURANT_WHATSAPP = '972592405995';
 const CART_KEY = 'laqma-cart-v1';
 
 function readCart() {

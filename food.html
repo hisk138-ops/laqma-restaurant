@@ -1,88 +1,108 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-    <link rel="stylesheet" href="cart.css">
-<script src="cart.js" defer></script>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>المأكولات | لقمة</title>
+
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
+  <script src="cart.js" defer></script>
 </head>
-<a href="cart.html" class="cart-shortcut">
-  🛒 السلة (<span id="cart-count">0</span>)
-</a>
-<p id="cart-status" role="status"></p>
+
 <body>
 
   <header class="menu-header">
     <span class="small-title">LAQMA RESTAURANT</span>
     <h1>قائمة المأكولات</h1>
     <p>نكهات مميزة، محضّرة بكل حب</p>
-    <a href="index.html" class="menu-button">الرئيسية</a>
-    <a href="drinks.html" class="menu-button">🥤 المشروبات</a>
+
+    <a href="index.html" class="menu-button">
+      الرئيسية
+    </a>
+
+    <a href="drinks.html" class="menu-button">
+      🥤 المشروبات
+    </a>
+
+    <a href="cart.html" class="menu-button">
+      🛒 عرض السلة
+    </a>
   </header>
 
   <section class="luxury-menu">
 
+    <!-- البرغر -->
     <div class="food-item">
-      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700" class="food-image" alt="برغر">
+      <img
+        src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700"
+        class="food-image"
+        alt="برغر لقمة">
+
       <h3>برغر لقمة 🍔</h3>
       <p>لحم مشوي، جبنة ذائبة وصوص خاص</p>
       <strong>20 ₪</strong>
-      <button class="add-cart-button" data-add-to-cart="burger">
-  🛒 أضف للسلة
-</button>
-      <a href="https://wa.me/970599000000?text=مرحبا، بدي أطلب بيتزا الجبنة - 25 شيكل"
-   target="_blank" rel="noopener noreferrer" class="order-button">
-  🛒 اطلب الآن
-</a>
+
+      <button type="button"
+              class="add-cart-button"
+              data-add-to-cart="burger">
+        🛒 أضف للسلة
+      </button>
     </div>
 
+    <!-- البيتزا -->
     <div class="food-item">
-      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700" class="food-image" alt="بيتزا">
+      <img
+        src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700"
+        class="food-image"
+        alt="بيتزا الجبنة">
+
       <h3>بيتزا الجبنة 🍕</h3>
       <p>عجينة طازجة مع جبنة موزاريلا</p>
       <strong>25 ₪</strong>
-      <button class="add-cart-button" data-add-to-cart="burger">
-  🛒 أضف للسلة
-</button>
 
-<a
-  href="https://wa.me/970599000000?text=مرحبا، بدي أطلب برغر لقمة"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="order-button">
-  🛒 اطلب الآن
-</a>
-
+      <button type="button"
+              class="add-cart-button"
+              data-add-to-cart="pizza">
+        🛒 أضف للسلة
+      </button>
     </div>
 
+    <!-- البطاطا -->
     <div class="food-item">
-      <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=700" class="food-image" alt="بطاطا مقلية">
+      <img
+        src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=700"
+        class="food-image"
+        alt="بطاطا مقلية">
+
       <h3>بطاطا مقلية 🍟</h3>
       <p>بطاطا ذهبية مقرمشة مع الصوص</p>
       <strong>8 ₪</strong>
-      <button class="add-cart-button" data-add-to-cart="burger">
-  🛒 أضف للسلة
-</button>
-      <a href="https://wa.me/970599000000?text=مرحبا، بدي أطلب بطاطا مقلية - 8 شواكل"
-   target="_blank" rel="noopener noreferrer" class="order-button">
-  🛒 اطلب الآن
-</a>
+
+      <button type="button"
+              class="add-cart-button"
+              data-add-to-cart="fries">
+        🛒 أضف للسلة
+      </button>
     </div>
 
+    <!-- الشاورما -->
     <div class="food-item">
-      <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=700" class="food-image" alt="شاورما">
+      <img
+        src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=700"
+        class="food-image"
+        alt="شاورما دجاج">
+
       <h3>شاورما دجاج 🌯</h3>
       <p>دجاج متبل مع الثومية والمخلل</p>
       <strong>18 ₪</strong>
-      <button class="add-cart-button" data-add-to-cart="burger">
-  🛒 أضف للسلة
-</button>
-      <a href="https://wa.me/970599000000?text=مرحبا، بدي أطلب شاورما دجاج - 18 شيكل"
-   target="_blank" rel="noopener noreferrer" class="order-button">
-  🛒 اطلب الآن
-</a>
+
+      <button type="button"
+              class="add-cart-button"
+              data-add-to-cart="shawarma">
+        🛒 أضف للسلة
+      </button>
     </div>
 
   </section>
@@ -91,6 +111,13 @@
     <h2>LAQMA | لقمة</h2>
     <p>صنع بحب في الخليل ❤️</p>
   </footer>
+
+  <a href="cart.html" class="cart-shortcut">
+    🛒 السلة (<span id="cart-count">0</span>)
+  </a>
+
+  <p id="cart-status" role="status"
+     aria-live="polite"></p>
 
 </body>
 </html>

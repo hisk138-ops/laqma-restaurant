@@ -1,16 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>العروض والكومبو | لقمة</title>
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="cart.css"><script src="cart.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>العروض والكومبو | لقمة</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
+
+  <script src="cart.js" defer></script>
 </head>
+
 <body>
-<header class="menu-header"><span class="small-title">LAQMA RESTAURANT</span><h1>🔥 عروض الكومبو</h1><p>وجبات كاملة بأسعار تجريبية خاصة</p><a href="index.html" class="menu-button">الرئيسية</a><a href="food.html" class="menu-button">المأكولات</a><a href="drinks.html" class="menu-button">المشروبات</a></header>
-<main class="offers-page">
-<article class="offer-card"><h2>🍔 كومبو البرغر</h2><p>برغر لقمة + بطاطا + مشروب غازي</p><strong>29 ₪</strong><p>اختار الحجم والإضافات من السلة</p><button class="add-cart-button" data-add-to-cart="combo_burger">🛒 أضف للسلة</button></article>
-<article class="offer-card"><h2>🌯 كومبو الشاورما</h2><p>شاورما دجاج + بطاطا + مشروب غازي</p><strong>27 ₪</strong><p>اختار الحجم من السلة</p><button class="add-cart-button" data-add-to-cart="combo_shawarma">🛒 أضف للسلة</button></article>
-</main>
-<a href="cart.html" class="cart-shortcut">🛒 السلة (<span id="cart-count">0</span>)</a><p id="cart-status" role="status"></p>
-<footer class="site-footer"><h2>لقمة | LAQMA</h2><p>الأسعار والعروض تجريبية</p></footer>
-</body></html>
+
+  <header class="menu-header">
+    <span class="small-title">LAQMA RESTAURANT</span>
+
+    <h1>🔥 عروض الكومبو</h1>
+    <p>وجبات كاملة بأسعار تجريبية خاصة</p>
+
+    <a href="index.html" class="menu-button">الرئيسية</a>
+    <a href="food.html" class="menu-button">المأكولات</a>
+    <a href="drinks.html" class="menu-button">المشروبات</a>
+  </header>
+
+  <main class="offers-page">
+
+    <!-- كومبو البرغر -->
+    <article class="offer-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700"
+        alt="كومبو البرغر"
+        class="offer-image">
+
+      <div class="offer-content">
+        <span class="offer-label">عرض مميز 🔥</span>
+
+        <h2>🍔 كومبو البرغر</h2>
+
+        <p>برغر لقمة + بطاطا مقلية + مشروب غازي</p>
+
+        <strong class="offer-price">29 ₪</strong>
+
+        <button
+          type="button"
+          class="add-cart-button"
+          data-add-to-cart="combo_burger">
+          🛒 أضف للسلة
+        </button>
+      </div>
+
+    </article>
+
+    <!-- كومبو الشاورما -->
+    <article class="offer-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=700"
+        alt="كومبو الشاورما"
+        class="offer-image">
+
+      <div class="offer-content">
+        <span class="offer-label">عرض مميز 🔥</span>
+
+        <h2>🌯 كومبو الشاورما</h2>
+
+        <p>شاورما دجاج + بطاطا مقلية + مشروب غازي</p>
+
+        <strong class="offer-price">27 ₪</strong>
+
+        <button
+          type="button"
+          class="add-cart-button"
+          data-add-to-cart="combo_shawarma">
+          🛒 أضف للسلة
+        </button>
+      </div>
+
+    </article>
+
+  </main>
+
+  <a href="cart.html" class="cart-shortcut">
+    🛒 السلة (<span id="cart-count">0</span>)
+  </a>
+
+  <p id="cart-status" role="status"
+     aria-live="polite"></p>
+
+  <footer class="site-footer">
+    <h2>لقمة | LAQMA</h2>
+    <p>الأسعار والعروض تجريبية</p>
+    <p class="developer-credit">Eng:AyhamAbuDabat</p>
+  </footer>
+
+</body>
+</html>
